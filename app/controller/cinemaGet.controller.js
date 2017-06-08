@@ -1,5 +1,5 @@
 var cinema = require('../model/cinema');
-
+//根据日期和电影名字来查询电影院
 exports.findcinema = function(req, res) {
   var date = req.body.date;
   var moviename = req.body.moviename;

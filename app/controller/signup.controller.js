@@ -1,6 +1,7 @@
 var userModel = require('../model/user');
 var path = require('path');
 var config = require('../../config/config');
+//根据用户名查询数据库，如果不存在则将用户名和密码保存
 exports.signup = function(req, res) {
   var username = req.body.username;
   var password = req.body.password;

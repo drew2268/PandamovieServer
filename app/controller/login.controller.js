@@ -1,5 +1,6 @@
 var userModel = require('../model/user');
 var config = require('../../config/config');
+//根据用户名和密码来查询数据库，如果存在则返回true
 exports.login = function(req, res) {
   var username = req.body.username;
   var password = req.body.password;

@@ -1,4 +1,5 @@
 var cinema = require('../model/cinema');
+//根据日期，时间，电影院名字，电影名字，查询电影院信息，如果票余量大于0，则更新票余量-1
 exports.updateTicket = function(req, res) {
   var date = req.body.date;
   var cinemaname = req.body.cinemaname;

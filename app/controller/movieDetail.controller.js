@@ -1,4 +1,5 @@
 var movie = require('../model/movie');
+//根据电影名字获取电影详情
 exports.getDetail = function(req, res) {
    var moviename = req.body.moviename;
    console.log(moviename);

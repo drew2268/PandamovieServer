@@ -1,5 +1,6 @@
 var path = require('path');
 var config = require('../../config/config');
+//根据图片名字发送相应图片给客户端
 exports.imageGet = function(req, res) {
     console.log(req.params.image);
 

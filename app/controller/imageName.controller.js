@@ -1,4 +1,5 @@
 var movie = require('../model/movie');
+//根据newid来获取电影图片名字
 exports.imageGetName = function(req, res) {
    var newid = req.body.newid;
    movie.find({newid: newid}, function(err, movies) {
